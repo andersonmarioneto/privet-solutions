@@ -1,5 +1,296 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* var */
+:root {
+    --primary-color: #194699;
+    --secondary-color: #EF2230;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --sinza-color: #F1F1F1;
+    --font-inter: "Inter", sans-serif;
+    --font-size: 12pt;
+    --font-size-btn: 10pt;
+    --font-size-h1: 37pt;
+    --font-size-h3: 32pt;
+}
+
+/* general */
+body {
+    font-family: var(--font-inter);
+}
+
+a,li {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* header nav */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
 
 .img-icon-logo {
-    height: 15rem;
+    height: 60px;
+} 
+
+.header-div2 {
+    background-color: var(--sinza-color);
+    border-radius: 10px;
+    font-size: var(--font-size);
+}
+
+.ul {
+    display: flex;
+}
+
+.ul a {
+    margin-right: 50px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.ul a:hover {
+    color: var(--secondary-color);
+}
+
+.ul .active {
+    color: var(--secondary-color);
+}
+
+.header-div3 {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px 18px 15px 18px;
+    border-radius: 10px;
+    font-size: var(--font-size-btn);
+    color: var(--white-color);
+    font-weight: bold;
+    transition: 0.1s;
+    width: 100px;
+}
+
+.header-div3:hover {
+    background-color: var(--secondary-color);
+    transition: 0.1s;
+}
+
+.header-div3 span {
+    margin-right: 10px;
+} 
+
+/* main section1 */
+.section1 {
+    display: block;
+    margin-top: 20px;
+}
+
+.text-main {
+    width: 380px;
+    margin-left: 150px;
+    margin-top: 160px;
+}
+
+.text-main h1 {
+    font-size: var(--font-size-h1);
+    color: var(--primary-color);
+}
+
+.text-main p {
+    opacity: 80%;
+    margin-bottom: 20px;
+    font-size: var(--font-size);
+}
+
+.x-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: -1; 
+    /* Garante que o fundo fique atrás do conteúdo */
+}
+
+/* main section2 */
+.section2 {
+    display: block;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.slide img {
+    margin-right: 40px;
+    height: 9vh;
+}
+
+/* main section3 */
+.section3 {
+    display: block;
+}
+
+.sub-title {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.sub-title h2 {
+    color: var(--secondary-color);
+}
+
+.sub-title .bus {
+    width: 140px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+    margin: auto;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.illustration {
+    width: 400px;
+    height: 400px;
+}
+
+.text-service {
+    width: 310px;
+    margin-left: 70px;
+}
+
+.text-service h3 {
+    font-size: var(--font-size-h3);
+    color: var(--primary-color);
+    margin-top: -30px;
+}
+
+.text-service p {
+    opacity: 80%;
+    font-size: var(--font-size);
+    color: #000000;
+    margin-top: -25px;
+}
+
+.service1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sinza-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.service1 .illustration1 {
+    margin-left: 70px;
+    width: 400px;
+    height: 400px;
+}
+
+.service1 .text-service1 {
+    width: 310px;
+}
+
+.text-service1 h3 {
+    font-size: var(--font-size-h3);
+    color: var(--secondary-color);
+    margin-top: -30px;
+}
+
+.text-service1 p {
+    opacity: 80%;
+    font-size: var(--font-size);
+    color: #000000;
+    margin-top: -25px;
+}
+
+/* main section4 */
+.section4 {
+    display: block;
+}
+
+.x-img2 {
+    position: absolute;
+    left: 0;
+    width: 100%; 
+    z-index: -1; 
+    /* Garante que o fundo fique atrás do conteúdo */
+}
+
+.section4 .sub-title {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.section4 .sub-title h2 {
+    color: var(--white-color);
+    padding-top: 90px;
+}
+
+.section4 .sub-title .bus {
+    width: 140px;
+    height: 2px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    margin: auto;
+}
+
+.section4 .text-inf {
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    line-height: 1.5;
+}
+
+.section4 div p {
+    color: var(--white-color);
+}
+
+.section4 .img-inf {
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* main section5 */
+.section5 {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section, footer{
+    display: none;
 }

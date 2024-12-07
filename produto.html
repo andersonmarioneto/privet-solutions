@@ -1,0 +1,335 @@
+<!-- HTML by: Anderson Mário Neto | UI Designer -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+    <!-- Buscadores do google -->
+    <meta name="keywords" content="Privet, Privet Solutions">
+    <meta name="description" content="Privet, Privet Solutions, Privet Solutions Angola">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/stylePro.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="_img/_icon/Artboard 8.svg" type="image/x-icon">
+    
+    <!-- Titulo -->
+    <title>Privet Solutions</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="_img/_icon/Artboard 1.svg" alt="Privet" class="img-icon-logo">
+            </a>
+        </div>
+        <!-- menu desktop -->
+        <nav class="menu">
+            <ul class="ul" id="menuList">
+                <a href="index.html" class="active"><img src="_img/_icon/home_5.svg"><li>Painel Inicial</li></a>
+                <a href="index.html#ser"><img src="_img/_icon/Sliders_horizontal.svg"><li>Serviços</li></a>
+                <a href="index.html#sob"><img src="_img/_icon/info_circle.svg"><li>Sobre Nós</li></a>
+                <a href="index.html#por"><img src="_img/_icon/Pie-chart_3.svg"><li>Portfólio</li></a>
+                <a href="index.html#con"><img src="_img/_icon/Phone.svg"><li>Contacto</li></a>
+            </ul>
+        </nav>
+        <a href="#" onclick="filterElements('All')" class="btn-produto3">
+            <img src="_img/_icon/Category.svg">
+        </a>
+        <!-- menu mobile -->
+        <nav class="menu-mobile" id="menu-mobile">
+            <ul class="ul" id="menuList">
+                <a href="index.html" class="active"><img src="_img/_icon/home_5.svg"><li>Painel Inicial</li></a>
+                <a href="#" onclick="filterElements('All')" class="active" ><img src="_img/_icon/Category.svg"><li>Produtos <img src="_img/_icon/chevron-right.svg"></li></a>
+                <a href="#" onclick="filterElements('Bloco')"><li class="espacoCategoria">Bloco de Notas</li></a>
+                <a href="#" onclick="filterElements('Escrita')"><li class="espacoCategoria">Conjuntos de escrita</li></a>
+                <a href="#" onclick="filterElements('Pasta')"><li class="espacoCategoria">Pastas de escritório</li></a>
+            </ul>
+        </nav>
+        <img src="_img/_icon/menu.svg" onclick="clicar()" class="btn-menu" id="btn-menu">
+    </header>
+    <main>
+        <section class="section1">
+
+            <div class="container-categorias buttons">
+                <a href="#" onclick="filterElements('Bloco')">Bloco de Notas</a> |
+                <a href="#" onclick="filterElements('Escrita')">Conjuntos de escrita</a> |
+                <a href="#" onclick="filterElements('Pasta')">Pastas de escritório</a>
+            </div>
+            <div class="container-pro">
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/b7.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>Big Bang</h2>
+                    <p class="ItemDescription">Bloco A5 com capa em cortiça e linho, 128 folhas</p>
+                    <p><span>REF:</span> TJ250585</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/b2.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>Bloco A5</h2>
+                    <p class="ItemDescription">Bloco A5 com capa dura. 96 folhas quadriculadas. Fita elástica e marca páginas</p>
+                    <p><span>REF:</span> MIMO8360</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/11068 bloco de notas.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>11068. Bloco de notas</h2>
+                    <p class="ItemDescription">Bloco de notas. Contem 192 páginas. Inclui banda elástica e bolso interior</p>
+                    <p><span>REF:</span> ST11068</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/abacork.jpeg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>Abacork</h2>
+                    <p class="ItemDescription">Bloco A5 com capa em craft e cortiça com fecho magnético</p>
+                    <p><span>REF:</span> TJ250593</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Escrita show">
+                    <div class="caixa-img"><img src="_img/_product/adak.jpeg"></div>
+                    <p>Conjuntos de escrita</p>
+                    <h2>Adak</h2>
+                    <p class="ItemDescription">Conjunto de esferográfica e lapiseira em alumínio, estojo de oferta</p>
+                    <p><span>REF:</span> TJ330373</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Pasta show">
+                    <div class="caixa-img"><img src="_img/_product/auster.jpg"></div>
+                    <p>Pastas de escritório</p>
+                    <h2>AUSTER Pasta A4</h2>
+                    <p class="ItemDescription">Pasta A4 em 600D com bolso exterior frontal. A pasta contém 4 argolas de 20mm no interior, que permitem anexar folhas A4</p>
+                    <p><span>REF:</span> ST92073</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/b1.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>A5 RPET</h2>
+                    <p class="ItemDescription">Caderno A5 com capa dura 600D RPET com detalhe em bambu com função de suporte para smartphone</p>
+                    <p><span>REF:</span> MIMO6576</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/b8.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>Bloco A5 papel</h2>
+                    <p class="ItemDescription">Bloco A5, 80 folhas de papel e capa de cartão (40%)</p>
+                    <p><span>REF:</span> MIMO6541</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Escrita show">
+                    <div class="caixa-img"><img src="_img/_product/bamfiber.jpeg"></div>
+                    <p>Conjuntos de escrita</p>
+                    <h2>Bamfiber Set</h2>
+                    <p class="ItemDescription">Conjunto de esferográfica e lapiseira em fibra de bambu, estojo de oferta</p>
+                    <p><span>REF:</span> TJ330379</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Escrita show">
+                    <div class="caixa-img"><img src="_img/_product/bamkit.jpeg"></div>
+                    <p>Conjuntos de escrita</p>
+                    <h2>Bamkit</h2>
+                    <p class="ItemDescription">Conjunto de esferográfica e roller em bambu, estojo de oferta</p>
+                    <p><span>REF:</span> TJ330381</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Escrita show">
+                    <div class="caixa-img"><img src="_img/_product/beequeem.jpeg"></div>
+                    <p>Conjuntos de escrita</p>
+                    <h2>Beequeen</h2>
+                    <p class="ItemDescription">Conjunto de roller e esferográfica em metal,estojo de oferta</p>
+                    <p><span>REF:</span> TJ330385</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/bianco bloco.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>Bianco A5</h2>
+                    <p class="ItemDescription">Bloco de notas com argolas de tamanho A5 feito com uma capa com certificação FSC de origem responsável</p>
+                    <p><span>REF:</span> PF107719</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/bloco a canvas.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>Bloco A5 de canvas</h2>
+                    <p class="ItemDescription">Bloco A5 com capa em canvas. 96 folhas pautadas. Espaço para caneta. Fita elástica e marca página.</p>
+                    <p><span>REF:</span> MIMO8712</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/bloco a6.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>Bloco A6 em cortiça</h2>
+                    <p class="ItemDescription">Bloco de capa de cortiça A6 com 70 páginas de papel reciclado forrado e caneta com caixa reciclada</p>
+                    <p><span>REF:</span> MIMO9857</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/bolco a com caneta.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>Bloco A5 com caneta</h2>
+                    <p class="ItemDescription">Bloco A5 com capa dura. 72 folhas pautadas. Fita elástica e marca página. Inclui caneta tinta azul.</p>
+                    <p><span>REF:</span> MIMO8108</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Pasta show">
+                    <div class="caixa-img"><img src="_img/_product/brier a4.jpeg"></div>
+                    <p>Pastas de escritório</p>
+                    <h2>Brier A4</h2>
+                    <p class="ItemDescription">Pasta porta-documentos A4 em PP</p>
+                    <p><span>REF:</span> TJ311002</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Pasta show">
+                    <div class="caixa-img"><img src="_img/_product/brier a5.jpeg"></div>
+                    <p>Pastas de escritório</p>
+                    <h2>Brier A5</h2>
+                    <p class="ItemDescription">Pasta porta-documentos A5 em PP</p>
+                    <p><span>REF:</span> TJ310933</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Pasta show">
+                    <div class="caixa-img"><img src="_img/_product/cussler.jpg"></div>
+                    <p>Pastas de escritório</p>
+                    <h2>BCUSSLER Pasta A4 </h2>
+                    <p class="ItemDescription">Pasta A4 com bloco de 20 folhas pautadas, bolso interior e suporte para esferográfica</p>
+                    <p><span>REF:</span> ST92049</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Escrita show">
+                    <div class="caixa-img"><img src="_img/_product/de fibra.jpg"></div>
+                    <p>Conjuntos de escrita</p>
+                    <h2>Escrita em fibra de carbono</h2>
+                    <p class="ItemDescription">Conjunto de esferográfica com mecanismo giratório e roller, ambas as peças em metal lacado e fibra de carbono, em estojo de oferta e fecho íman. Escrita preto.</p>
+                    <p><span>REF:</span> GI3337</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Pasta show">
+                    <div class="caixa-img"><img src="_img/_product/ecofolder.jpeg"></div>
+                    <p>Pastas de escritório</p>
+                    <h2>Ecofolder</h2>
+                    <p class="ItemDescription">Pasta arquivadora em cartão</p>
+                    <p><span>REF:</span> TJ311113</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Pasta show">
+                    <div class="caixa-img"><img src="_img/_product/pboard.jpeg"></div>
+                    <p>Pastas de escritório</p>
+                    <h2>Pboard</h2>
+                    <p class="ItemDescription">Prancheta em MDF</p>
+                    <p><span>REF:</span> TJ250537</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Pasta show">
+                    <div class="caixa-img"><img src="_img/_product/poe.jpg"></div>
+                    <p>Pastas de escritório</p>
+                    <h2>POE porta documentos A4</h2>
+                    <p class="ItemDescription">Pasta porta-documentos A4 em cartão kraft (450 g/m²) com um bloco de 20 folhas lisas e suporte para cartão de visita. Esferográ</p>
+                    <p><span>REF:</span> ST92046</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Escrita show">
+                    <div class="caixa-img"><img src="_img/_product/rollerbal.jpg"></div>
+                    <p>Conjuntos de escrita</p>
+                    <h2>Conjunto de esferográfica</h2>
+                    <p class="ItemDescription">O conjunto “Didimis” de esferográfica e caneta rollerball é fabricado em aço inoxidável reciclado</p>
+                    <p><span>REF:</span> PF107836</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/b3.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>Bloco A5</h2>
+                    <p class="ItemDescription">Bloco A5 com capa dura. 96 folhas quadriculadas. Fita elástica e marca páginas</p>
+                    <p><span>REF:</span> MIMO8360</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="sub-container-pro Bloco show">
+                    <div class="caixa-img"><img src="_img/_product/b4.jpg"></div>
+                    <p>Bloco de Notas</p>
+                    <h2>Bloco A5</h2>
+                    <p class="ItemDescription">Bloco A5 com capa dura. 96 folhas quadriculadas. Fita elástica e marca páginas</p>
+                    <p><span>REF:</span> MIMO8360</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="box-footer scroll-1">
+                <a href="index.html"><img src="_img/_icon/Artboard 3.svg" alt="Privet" class="img-icon-logo"></a>
+                <p>Qualidade, Exclusividade e Personalização: A essência da Privet Solutions para soluções que fazem a diferença.</p>
+            </div>
+            <div class="footer-section scroll-2">
+                <h4>Navegação</h4>
+                <a href="index.html"><p>Painel Inicial</p></a>
+                <a href="index.html#ser"><p>Serviços</p></a>
+                <a href="index.html#sob"><p>Sobre Nós</p></a>
+                <a href="index.html#por"><p>Portfólio</p></a>
+            </div>
+            <div class="footer-section scroll-3">
+                <h4>Produtos</h4>
+                <a href="#" onclick="filterElements('Bloco')"><p>Bloco de Notas</p></a>
+                <a href="#" onclick="filterElements('Escrita')"><p>Conjuntos de escrita</p></a>
+                <a href="#" onclick="filterElements('Pasta')"><p>Pastas de escritório</p></a>
+                <a href="#" onclick="filterElements('All')"><p>Todos</p></a>
+            </div>
+            <div class="footer-section scroll-4">
+                <h4>Clientes</h4>
+                <a href="https://www.bicseguros.ao/" target="_blank"><p>BIC Seguros</p></a>
+                <a href="https://www.aliancaseguros.ao/" target="_blank"><p>Aiança Seguros</p></a>
+                <a href="https://www.nossaseguros.ao/" target="_blank"><p>Nossa Seguros</p></a>
+                <a href="https://www.luele.co.ao/" target="_blank"><p>Luele</p></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="scroll-4">Copyrigth <span>Privet Solutions</span> - 2024 | UI by Anderson Mário Neto</p>
+        </div>
+    </footer>
+
+    <!-- Js menu hamburger -->
+    <script src="_js/script.js" defer></script>
+
+    <!-- js categorias -->
+     <script src="_js/category.js"></script>
+
+    <!-- Js scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="_js/revial.js" defer></script>
+</body>
+</html>

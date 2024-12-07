@@ -1,0 +1,343 @@
+/* Style by: Anderson Mário Neto | UI Designer */
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* var */
+:root {
+    --primary-color: #194699;
+    --secondary-color: #EF2230;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --sinza-color: #F1F1F1;
+    --footer-color1: #101010;
+    --footer-color2: #1A1A1A;
+
+    --font-inter: "Inter", sans-serif;
+
+    --font-size: 12pt;
+    --font-size-btn: 10pt;
+    --font-size-h1: 37pt;
+    --font-size-h3: 32pt;
+    --font-size-footer: 10pt;
+    --font-size-h2: 21pt;
+
+    /* mobile */
+    --font-sizeM: 10pt;
+    --font-size-btnM: 8pt;
+    --font-size-h1M: 30pt;
+    --font-size-h3M: 27pt;
+    --font-size-footerM: 8pt;
+}
+
+/* general */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-inter);
+    font-style: normal; 
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100vh;
+}
+
+a,li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* main */
+.main {
+    background-color: var(--sinza-color);
+    width: calc(100vw - 280px);
+    position: absolute;
+    top: 0;
+    left: 250px;
+}
+
+.main .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.main .top input {
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px 10px 8px 17px;
+    width: 700px;
+    border: solid 1px transparent;
+    transition: 0.1s;
+}
+
+.main .top .search:hover, .main .top input:hover {
+    border: solid 1px var(--primary-color);
+    transition: 0.1s;
+}
+
+.main .top .input-search {
+    display: flex;
+}
+
+.main .top .search {
+    background-color: var(--white-color);
+    padding: 10px 10px 10px 17px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    cursor: pointer;
+    border: solid 1px transparent;
+    transition: 0.1s;
+}
+
+.main .top .btn { 
+    background-color: var(--primary-color);
+    padding: 11px 14px 11px 14px;
+    border-radius: 10px;
+    font-size: var(--font-size-btnM);
+    color: var(--white-color);
+    font-weight: bold;
+    transition: 0.1s;
+    width: 110px;
+}
+
+.main .top .btn:hover { 
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    font-size: var(--font-size-h2);
+    font-weight: 400;
+    color: var(--footer-color1);
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.container-categorias {
+    position: absolute;
+    left: 80px;
+    top: 150px;
+    font-size: var(--font-sizeM);
+}
+.container-categorias a {
+    color: var(--footer-color2);
+    transition: 0.2s;
+}
+.container-categorias a:hover {
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: 0.2s;
+}
+.container-categorias .active {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.container-pro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    margin: 170px 40px 10px 40px;
+}
+
+.sub-container-pro {
+    background-color: var(--white-color);
+    border: solid 3px var(--sinza-color);
+    border-radius: 10px;
+    width: 200px;
+    height: 100%;
+    margin: 20px;
+    padding: 10px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.sub-container-pro .caixa-img {
+    width: 180px;
+    height: 210px; 
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+}
+
+.sub-container-pro .caixa-img img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+    transition: 0.7s;
+}
+.sub-container-pro .caixa-img img:hover {
+    width: 110%; 
+    height: 110%;
+    transition: 0.7s;
+}
+
+.sub-container-pro h2{
+    font-size: calc(var(--font-size) + 3pt);
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.sub-container-pro p {
+    color: var(--footer-color1);
+    font-size: var(--font-sizeM);
+    margin-bottom: 10px;
+}
+
+.sub-container-pro .ItemDescription {
+    opacity: 80%;
+}
+
+.sub-container-pro span {
+    font-weight: bold;
+} 
+
+.sub-container-pro .btn-detalhes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sinza-color);
+    border-radius: 7px;
+    padding: 7px;
+    color: var(--footer-color1);
+    font-size: var(--font-size-btnM);
+    font-weight: bolder;
+}
+
+.sub-container-pro .btn-detalhes:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.sub-container-pro .btn-detalhes img {
+    margin-right: 3px;
+}
+
+/* detalhes.html */
+.container-pro2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+.container-pro2 .caixa-img2 {
+    width: 280px;
+    height: 300px; 
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+}
+
+.sub-container-pro .caixa-img2 img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+    transition: 0.7s;
+}
+
+.caixa-img2-Geral {
+    display: flex;
+}
+
+.container-pro2 .caixa-img2-pequena {
+    width: calc(280px - 220px);
+    height: calc(300px - 240px); 
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+}
+
+.sub-container-pro .caixa-img2-pequena img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+    transition: 0.7s;
+}
+
+.div-txt {
+    width: 400px;
+}
+.div-txt .descriptionD {
+    font-weight: bold;
+}
+.div-txt .txtT {
+    opacity: 70%;
+}
+/* Responsividade */
+@media (max-width: 1200px) {
+    .main {
+        width: calc(100vw - 200px);
+        left: 200px;
+    }
+    .main .top input {
+        width: 500px;
+    }
+    h1 {
+        font-size: var(--font-size-h2);
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+        left: 0;
+        padding: 10px;
+    }
+
+    .main .top input {
+        width: 100%;
+    }
+
+    .container-pro {
+        justify-content: center;
+    }
+
+    .sub-container-pro {
+        width: 45%; /* Duas colunas */
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: var(--font-size-h3);
+    }
+}
+
+@media (max-width: 480px) {
+    .main .top input {
+        width: 100%;
+    }
+
+    .container-pro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-container-pro {
+        width: 90%; /* Uma coluna */
+    }
+
+    h1 {
+        font-size: var(--font-size-h3M);
+    }
+}

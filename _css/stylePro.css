@@ -131,7 +131,8 @@ h1 {
     padding: 20px;
     left: 0;
     right: 0;
-    margin: auto 60px auto 60px;
+    margin-left: 60px;
+    width: 500px;
 }
 .container-categorias a {
     color: var(--footer-color2);
@@ -141,11 +142,11 @@ h1 {
     color: var(--primary-color);
     font-weight: bold;
     transition: 0.2s;
-}/* 
+}
 .container-categorias a.active {
     color: var(--primary-color);
     font-weight: bold;
-} */
+}
 
 .container-pro {
     display: flex;
@@ -166,7 +167,7 @@ h1 {
     display: none;
 }
 
-.show {
+.sub-container-pro.show {
     display: block;
 }
 

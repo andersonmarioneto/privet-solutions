@@ -122,8 +122,7 @@ h1 {
 }
 
 .container-categorias {
-    position: absolute;/* 
-    left: 80px;*/
+    position: absolute;
     top: 110px; 
     font-size: var(--font-sizeM);
     border: solid 2px var(--sinza-color);
@@ -132,17 +131,20 @@ h1 {
     left: 0;
     right: 0;
     margin-left: 60px;
-    width: 500px;
+    width: calc(100% - 10%);
 }
+
 .container-categorias a {
     color: var(--footer-color2);
     transition: 0.2s;
 }
+
 .container-categorias a:hover {
     color: var(--primary-color);
     font-weight: bold;
     transition: 0.2s;
 }
+
 .container-categorias a.active {
     color: var(--primary-color);
     font-weight: bold;
@@ -187,6 +189,7 @@ h1 {
     display: block; 
     transition: 0.7s;
 }
+
 .sub-container-pro .caixa-img img:hover {
     width: 110%; 
     height: 110%;

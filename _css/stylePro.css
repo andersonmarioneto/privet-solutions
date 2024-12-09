@@ -177,6 +177,7 @@ h1 {
     overflow: hidden; 
     position: relative;
     display: flex;
+    cursor: pointer;
 }
 
 .sub-container-pro .caixa-img img {
@@ -190,6 +191,51 @@ h1 {
     width: 110%; 
     height: 110%;
     transition: 0.7s;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal span {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal .close {
+    top: 10px;
+    right: 20px;
+}
+
+.modal .arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+}
+
+.arrow.left {
+    left: 20px;
+}
+
+.arrow.right {
+    right: 20px;
 }
 
 .sub-container-pro h2{

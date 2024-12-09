@@ -60,7 +60,25 @@
                 <a href="#" onclick="filterElements('Escrita', event)">Conjuntos de escrita</a> |
                 <a href="#" onclick="filterElements('Pasta', event)">Pastas de escritório</a>
             </div>
-            <div class="container-pro">
+            <div class="container-pro"> 
+                
+                <div class="sub-container-pro Bloco show" id="gallery">
+                    <div class="caixa-img" data-images='["_img/_product/b2.jpg", "_img/_product/b4.jpg", "_img/_product/b3.jpg"]'>
+                        <img src="_img/_product/b2.jpg">
+                    </div>
+                    <p>Bloco de Notas</p>
+                    <h2>Bloco A5</h2>
+                    <p class="ItemDescription">Bloco A5 com capa dura. 96 folhas quadriculadas. Fita elástica e marca páginas</p>
+                    <p><span>REF:</span> MIMO8360</p>
+                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+                </div>
+
+                <div class="modal" id="modal">
+                    <span class="close" onclick="closeModal()">×</span>
+                    <span class="arrow left" onclick="changeImage(-1)">&#10094;</span>
+                    <span class="arrow right" onclick="changeImage(1)">&#10095;</span>
+                    <img id="modalImage" src="" alt="Imagem Destacada">
+                </div>
 
                 <div class="sub-container-pro Escrita show">
                     <div class="caixa-img"><img src="_img/_product/de fibra.jpg"></div>
@@ -77,15 +95,6 @@
                     <h2>Big Bang</h2>
                     <p class="ItemDescription">Bloco A5 com capa em cortiça e linho, 128 folhas</p>
                     <p><span>REF:</span> TJ250585</p>
-                    <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
-                </div>
-
-                <div class="sub-container-pro Bloco show">
-                    <div class="caixa-img"><img src="_img/_product/b2.jpg"></div>
-                    <p>Bloco de Notas</p>
-                    <h2>Bloco A5</h2>
-                    <p class="ItemDescription">Bloco A5 com capa dura. 96 folhas quadriculadas. Fita elástica e marca páginas</p>
-                    <p><span>REF:</span> MIMO8360</p>
                     <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
                 </div>
 
@@ -332,5 +341,8 @@
 
     <!-- js categorias -->
     <script src="_js/category.js" defer></script>
+
+    <!-- js slides of images -->
+     <script src="_js/slideImage.js"></script>
 </body>
 </html>

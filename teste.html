@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudar Imagem ao Passar o Mouse</title>
+  <link rel="stylesheet" href="_css/stylePro.css">
+</head>
+<body class="container-pro">
+    <div class="sub-container-pro Bloco show gallery">
+        <div class="caixa-img" data-images='["_img/_product/b2.jpg", "_img/_product/b4.jpg", "_img/_product/b3.jpg"]'>
+            <img src="_img/_product/b2.jpg">
+        </div>
+        <p>Bloco de Notas</p>
+        <h2>Bloco A5</h2>
+        <p class="ItemDescription">Bloco A5 com capa dura. 96 folhas quadriculadas. Fita elástica e marca páginas</p>
+        <p><span>REF:</span> MIMO8360</p>
+        <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+    </div>
+
+    <div class="sub-container-pro Acessorio show gallery">
+        <div class="caixa-img" data-images='["_img/_product/abrecarta.jpg", "_img/_product/abrecarta2.jpg", "_img/_product/abrecarta3.jpg"]'>
+            <img src="_img/_product/abrecarta.jpg">
+        </div>
+        <p>Acessórios</p>
+        <h2>Abre-cartas Alenna</h2>
+        <p class="ItemDescription">Abre-cartas de metal Alenna em estojo de oferta</p>
+        <p><span>REF:</span> GI3691</p>
+        <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+    </div>
+
+    <div class="sub-container-pro Bloco show gallery">
+        <div class="caixa-img" data-images='["_img/_product/b1.jpg", "_img/_product/b4.jpg", "_img/_product/b3.jpg"]'>
+            <img src="_img/_product/b1.jpg">
+        </div>
+        <p>Bloco de Notas</p>
+        <h2>Bloco A5</h2>
+        <p class="ItemDescription">Bloco A5 com capa dura. 96 folhas quadriculadas. Fita elástica e marca páginas</p>
+        <p><span>REF:</span> MIMO8360</p>
+        <a href="index.html#con" class="btn-detalhes"><img src="_img/_icon/Check.svg">Solicitar</a>
+    </div>
+
+    <div class="modal" id="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <span class="arrow left" onclick="changeImage(-1)">&#10094;</span>
+        <span class="arrow right" onclick="changeImage(1)">&#10095;</span>
+        <img id="modalImage" src="" alt="Imagem Destacada">
+    </div>
+
+  <script>
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modalImage");
+    let currentImages = [];
+    let currentIndex = 0;   
+
+    // Seleciona todos os elementos com a classe 'gallery'
+    document.querySelectorAll(".gallery").forEach((gallery) => {
+        gallery.addEventListener("click", (e) => {
+            const card = e.target.closest(".caixa-img");
+            if (!card) return;
+
+            currentImages = JSON.parse(card.dataset.images);
+            currentIndex = 0;
+            showModal(currentImages[currentIndex]);
+        });
+    });
+
+    function showModal(src) {
+        modalImage.src = src;
+        modal.classList.add("active");
+    }
+
+    function closeModal() {
+        modal.classList.remove("active");
+    }
+
+    function changeImage(dir) {
+        currentIndex = (currentIndex + dir + currentImages.length) % currentImages.length;
+        modalImage.src = currentImages[currentIndex];
+    }
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (!modal.classList.contains("active")) return;
+        if (e.key === "ArrowRight") changeImage(1);
+        if (e.key === "ArrowLeft") changeImage(-1);
+        if (e.key === "Escape") closeModal();
+    });
+  </script>
+</body>
+</html>

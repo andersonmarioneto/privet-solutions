@@ -5,13 +5,16 @@ const modalImage = document.getElementById("modalImage");
 let currentImages = [];
 let currentIndex = 0;
 
-document.getElementById("gallery").addEventListener("click", (e) => {
-    const card = e.target.closest(".caixa-img");
-    if (!card) return;
+// Seleciona todos os elementos com a classe 'gallery'
+document.querySelectorAll(".gallery").forEach((gallery) => {
+    gallery.addEventListener("click", (e) => {
+        const card = e.target.closest(".caixa-img");
+        if (!card) return;
 
-    currentImages = JSON.parse(card.dataset.images);
-    currentIndex = 0;
-    showModal(currentImages[currentIndex]);
+        currentImages = JSON.parse(card.dataset.images);
+        currentIndex = 0;
+        showModal(currentImages[currentIndex]);
+    });
 });
 
 function showModal(src) {

@@ -488,7 +488,9 @@ header.rolagem {
 }
 
 .contact .inf-contact {
-    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+  /*   width: 350px; */
 }
 
 .contact .inf-contact .localization, .email, .phone {

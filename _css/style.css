@@ -18,6 +18,7 @@
     --font-size-btn: 10pt;
     --font-size-h1: 37pt;
     --font-size-h3: 32pt;
+    --font-size-title-smoll: 17pt;
     --font-size-footer: 10pt;
 
     /* mobile */
@@ -25,6 +26,7 @@
     --font-size-btnM: 8pt;
     --font-size-h1M: 30pt;
     --font-size-h3M: 27pt;
+    --font-size-title-smollM: 13pt; 
     --font-size-footerM: 8pt;
 }
 
@@ -279,38 +281,33 @@ header.rolagem {
 
 .service {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
     flex-wrap: wrap;
 }
 
-.illustration {
-    width: 400px;
-    height: 400px;
-}
-
 .text-service {
-    width: 310px;
+    width: 550px;
     margin-left: 70px;
 }
 
 .text-service h3 {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-title-smoll);
     color: var(--primary-color);
 }
 
 .text-service p, .text-service1 p {
     opacity: 80%;
-    font-size: var(--font-size);
+    font-size: var(--font-size-btn);
     color: #000000;
     margin-top: 8px;
 }
 
 .service1 {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background-color: var(--sinza-color);
     padding-top: 40px;
@@ -318,20 +315,6 @@ header.rolagem {
     flex-wrap: wrap;
 }
 
-.service1 .illustration1 {
-    margin-left: 70px;
-    width: 400px;
-    height: 400px;
-}
-
-.service1 .text-service1 {
-    width: 310px;
-}
-
-.text-service1 h3 {
-    font-size: var(--font-size-h3);
-    color: var(--secondary-color);
-}
 
 /* section4 */
 .container-fundo2 {

@@ -2,6 +2,7 @@
 
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
 /* var */
@@ -13,7 +14,7 @@
     --sinza-color: #F1F1F1;
     --footer-color1: #101010;
     --footer-color2: #1A1A1A;
-    --font-inter: "Inter", sans-serif;
+    --font-inter: "Quicksand", serif; /*"Inter", sans-serif;*/
     --font-size: 12pt;
     --font-size-btn: 10pt;
     --font-size-h1: 37pt;
@@ -290,18 +291,23 @@ header.rolagem {
 
 .text-service {
     width: 550px;
-    margin-left: 70px;
+    margin-left: 10px;
+}
+
+.text-service img {
+    height: 70px;
+    margin-top: 20px;
 }
 
 .text-service h3 {
     font-size: var(--font-size-title-smoll);
     color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .text-service p, .text-service1 p {
-    opacity: 80%;
-    font-size: var(--font-size-btn);
-    color: #000000;
+    font-size: var(--font-size);
     margin-top: 8px;
 }
 
@@ -653,22 +659,12 @@ header.rolagem {
         
     } */
 
-    .illustration {
-        width: 200px;
-        height: 200px;
-    }
-
     .text-service h3 {
         font-size: var(--font-size-h3M);
     }
 
     .text-service p, .text-service1 p {
         font-size: var(--font-sizeM);
-    }
-
-    .service1 .illustration1 {
-        width: 270px;
-        height: 270px;
     }
 
     .text-service1 h3 {
@@ -758,27 +754,20 @@ header.rolagem {
     /* .section3 {
         
     } */
-
-    .illustration {
-        width: 200px;
-        height: 200px;
+    .service, .service1 {
+        padding: 10px;
     }
 
     .text-service h3 {
-        font-size: var(--font-size-h3M);
+        font-size: var(--font-size);
     }
 
     .text-service p, .text-service1 p {
         font-size: var(--font-sizeM);
     }
 
-    .service1 .illustration1 {
-        width: 270px;
-        height: 270px;
-    }
-
     .text-service1 h3 {
-        font-size: var(--font-size-h3M);
+        font-size: var(--font-size);
     }
 
     /* section4 */

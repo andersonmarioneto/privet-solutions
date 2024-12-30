@@ -733,8 +733,10 @@ header.rolagem {
         opacity: 80%;
         margin-bottom: 20px;
         font-size: var(--font-sizeM);
-        white-space: normal;
-        overflow-wrap: break-word;
+        white-space: normal; /* Permite quebras de linha automáticas */
+        overflow-wrap: break-word; /* Garante quebra de palavras longas */
+        word-break: break-word; /* Compatibilidade adicional */
+        line-height: 1.6; /* Melhora a legibilidade */
     }
 
     .btn-produto2 {
